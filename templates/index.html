@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>✨ Daily Quote Generator</h1>
+        <p>Get inspired. Save your favourite words.</p>
+    </header>
+
+    <main>
+
+        <section class="quote-card">
+
+            <h2>Today's Inspiration</h2>
+
+            <p id="quote">
+                Loading your quote...
+            </p>
+
+            <h3 id="author"></h3>
+
+            <p id="source" class="source"></p>
+
+            <div class="buttons">
+
+                <button onclick="getQuote()">
+                    New Quote
+                </button>
+
+                <button onclick="saveFavorite()">
+                    ❤️ Save Favorite
+                </button>
+
+                <button onclick="copyQuote()">
+                    📋 Copy Quote
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section class="history">
+
+            <h2>❤️ Favourite Quotes History</h2>
+
+            <div id="favorites">
+                Loading favorites...
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

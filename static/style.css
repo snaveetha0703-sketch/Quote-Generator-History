@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f0fa;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #493568;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.quote-card {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #0002;
+}
+
+#quote {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #493568;
+    margin: 30px 0;
+}
+
+#author {
+    color: #777;
+}
+
+.source {
+    font-size: 12px;
+    color: #888;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    background: #684b91;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #493568;
+}
+
+.history {
+    margin-top: 35px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.favorite-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.5;
+}
+
+.favorite-item button {
+    margin: 5px;
+}
+
+#message {
+    color: #31804b;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    #quote {
+        font-size: 19px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
